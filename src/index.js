@@ -1,4 +1,6 @@
 import _ from 'lodash'
+import './style.css'
+
 //import { NAME, NiJou } from './utilities'
 //import * as util from './utilities'
 //import { NAME as NAME_OF_HAM } from './utilities'
@@ -14,4 +16,6 @@ function component() {
 }
 
 document.body.appendChild(component())
+document.body.classList.add('haikei')
+
 
