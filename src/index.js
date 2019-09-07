@@ -1,26 +1,8 @@
-import _ from 'lodash'
-import './style.css'
-import './style.scss'
-import logo from './logo.png'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-//import { NAME, NiJou } from './utilities'
-//import * as util from './utilities'
-//import { NAME as NAME_OF_HAM } from './utilities'
-import Tiger from './utilities'
-
-console.log(Tiger.say())
-
-function component() {
-	const element = document.createElement('div')
-	const array = ['Hello', 'webpack', '!!!!']
-	element.innerHTML = _.join(array, ' ')
-	return element;
-}
-
-document.body.appendChild(component())
-document.body.classList.add('haikei')
-
-const image = new Image()
-image.src = logo
-document.body.appendChild(image)
+ReactDOM.render(
+	<div>Hello React!</div>,
+	document.getElementById('root')
+)
 
